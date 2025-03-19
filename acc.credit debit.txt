@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Account ac = new Account("kanishkaa", 200000);
+        System.out.println("Account holder name: " + ac.getAccholder());
+        System.out.println("Balance: " + ac.getBalance());
+        ac.setAccholder("Rash");
+        System.out.println("Updated account holder name: " + ac.getAccholder());
+        System.out.print("Enter amount to credit: ");
+        int creditAmount = scanner.nextInt(); 
+        ac.addCredit(creditAmount);
+        System.out.print("Enter amount to debit: ");
+        int debitAmount = scanner.nextInt(); 
+        ac.adddebit(debitAmount);
+        System.out.println("Updated balance: " + ac.getBalance());
+        scanner.close(); 
+    }
+}
+
+class Account {
+    private String Accholder;
+    private int Balance;
+    Account(String Accholder, int Balance) {
+        this.Accholder = Accholder;
+        this.Balance = Balance;
+    }
+    public String getAccholder() {
+        return Accholder;
+    }
+    public int getBalance() {
+        return Balance;
+    }
+    public void setAccholder(String Accholder) {
+        this.Accholder = Accholder;
+    }
+    public void addCredit(int credit) {
+      Balance += credit;
+    }
+     public void adddebit(int debit) {
+      Balance -= debit;
+    }
+}
