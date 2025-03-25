@@ -1,7 +1,5 @@
 IF-ELSE:
-
 import java.util.Scanner;
-
 class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -15,6 +13,9 @@ class Main {
 }
     
 }
+
+
+
 
 NESTED IF:
 
@@ -71,6 +72,10 @@ class Main {
 }
 
 
+
+
+
+
 ARRAY:
 (1)...Single Dimensional array:
 
@@ -85,6 +90,10 @@ class Main {
       }
     }
 }
+
+
+
+
 
 
 (2)...Multi Dimensional array:
@@ -103,7 +112,7 @@ class Main {
 }
 
 
-PROGRAM::::::----------------------------->
+
 
 (1)....Movie Ticket Discount: Write a program that calculates the final ticket price.
 A theater offers a discount based on age:
@@ -138,6 +147,10 @@ class Main {
 }
     
 }
+
+
+
+
 
 2)....Loan Approval:Write a program to check loan eligibility.
 A bank approves a loan if:
@@ -175,6 +188,9 @@ class Main {
 }
 
 
+
+
+
 3).......Switch Case / Alternative Conditions
 Traffic Signal Rules:
 Write a program that takes a traffic signal color as input (Red, Yellow, Green) and prints:
@@ -209,6 +225,10 @@ class Main {
     
 }
 
+
+
+
+
 4).... Write a java program takes a number from the user and generates an integer between 1 and 7.It displays the weekday name.
 TEST DATA..
 Input number: 3
@@ -223,8 +243,6 @@ class Main {
         Scanner input = new Scanner(System.in);  
         System.out.println("choice:");
     int choice= input.nextInt();
-   
- //if(age>18 && weight<=50 )
  System.out.println("Expected Output:");
  switch(choice){
      case 1:
@@ -254,6 +272,8 @@ class Main {
 
 
 
+
+
 5)...... Exam passing criteria:  Write a program that checks if a student has passed or failed.
 A student passes an exam if:
  	*They score atleast 40 marks in theory and 30 marks in practical's.
@@ -269,12 +289,9 @@ class Main {
         System.out.println(" Practical:");
    int practical= input.nextInt();
      int sum=theory+practical;
- //if(age>18 && weight<=50 )
-
   if(theory>=40 && practical>=30){
      System.out.println(" pass");
   }
- 
      if(sum>=70){
      System.out.println(" pass");
   }
@@ -283,6 +300,10 @@ class Main {
 }
     
 }
+
+
+
+
 
 6)............right angled triangled
 
