@@ -1,4 +1,4 @@
-import java.util.*; //to call all the packages
+import java.util.*; 
 class getchar {
     public static void main(String[] args) {
         Scanner ref = new Scanner(System.in);
